@@ -27,7 +27,6 @@ class App extends Component {
        </p>
         <p>{this.state.message}</p>
         <input onChange={(e) => this.handleChange(e.target.value)} />
-
       </div>
     );
   }
@@ -35,5 +34,4 @@ class App extends Component {
 
 export default App;
 
-
-// 2:22 - 8/5/19
+// 2:43 - 8/8/19
