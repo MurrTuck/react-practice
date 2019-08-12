@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 class App extends Component {
   constructor() {
-    super()
+    super();
 
     this.state = {
-      message: "Murray"
-    }
+      message: 'Murray'
+    };
   }
 
   handleChange(value) {
-    this.setState({ message: value })
+    this.setState({ message: value });
   }
 
   render() {
@@ -24,9 +24,9 @@ class App extends Component {
         </div>
         <p className='App-intro'>
           To get started, edit <code>src/App.js</code> and save to reload.
-       </p>
+        </p>
         <p>{this.state.message}</p>
-        <input onChange={(e) => this.handleChange(e.target.value)} />
+        <input onChange={e => this.handleChange(e.target.value)} />
       </div>
     );
   }
@@ -34,5 +34,4 @@ class App extends Component {
 
 export default App;
 
-
-// 2:52 - 8/9
+// 2:22 - 8/12
