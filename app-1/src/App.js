@@ -20,13 +20,13 @@ class App extends Component {
       <div className='App'>
         <div className='App-header'>
           <img src={logo} className='App-logo' alt='logo' />
-          <h2>Welcome to React. Don’t start counting until it Hurts</h2>
+          <h2>Welcome to React. Don’t start counting until it Hurts.</h2>
         </div>
         <p className='App-intro'>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <input onChange={e => this.handleChange(e.target.value)} type='text' />
         <p>{this.state.message}</p>
-        <input onChange={e => this.handleChange(e.target.value)} />
       </div>
     );
   }
@@ -34,4 +34,4 @@ class App extends Component {
 
 export default App;
 
-// 2:22 - 8/12
+// 3:28 - 10/15/19
