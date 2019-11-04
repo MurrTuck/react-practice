@@ -7,7 +7,7 @@ class App extends Component {
     super();
 
     this.state = {
-      message: 'YEE YEE!'
+      message: 'Start Here'
     };
   }
 
@@ -25,10 +25,7 @@ class App extends Component {
         <p className='App-intro'>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <input
-          onChange={e => this.handleChange(e.target.value)}
-          type='text'
-        ></input>
+        <input onChange={e => this.handleChange(e.target.value)} type='text' />
         <p>{this.state.message}</p>
       </div>
     );
@@ -37,4 +34,4 @@ class App extends Component {
 
 export default App;
 
-// 3:13 - 10/24
+// 5:33 - 11/4
