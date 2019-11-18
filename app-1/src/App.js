@@ -7,14 +7,13 @@ class App extends Component {
     super();
 
     this.state = {
-      message: 'Start Here'
+      message: 'Murray'
     };
   }
 
   handleChange(value) {
     this.setState({ message: value });
   }
-
   render() {
     return (
       <div className='App'>
@@ -34,4 +33,4 @@ class App extends Component {
 
 export default App;
 
-// 5:33 - 11/4
+// 3:24 - 11/18
