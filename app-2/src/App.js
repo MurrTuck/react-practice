@@ -7,15 +7,13 @@ class App extends Component {
     super();
 
     this.state = {
-      color: ['Green', 'Orange', 'Blue', 'Red', 'Purple', 'Yellow']
+      colors: ['green', 'blue', 'red', 'purple', 'orange']
     };
   }
-
   render() {
-    let colorDisplay = this.state.color.map((element, index) => {
+    let colorsDisplay = this.state.colors.map((element, index) => {
       return <h2 type={index}>{element}</h2>;
     });
-
     return (
       <div className='App'>
         <div className='App-header'>
@@ -25,8 +23,7 @@ class App extends Component {
         <p className='App-intro'>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>{this.state.color}</p>
-        <p>{colorDisplay}</p>
+        <p>{colorsDisplay}</p>
       </div>
     );
   }
@@ -34,4 +31,4 @@ class App extends Component {
 
 export default App;
 
-// 8:05 - 11/9
+// 4:00 - 11/18
