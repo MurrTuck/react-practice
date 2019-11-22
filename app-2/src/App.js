@@ -3,7 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      colors: ['blue', 'red', 'purple', 'orange', 'green', 'yellow']
+    };
+  }
   render() {
+    let displayColors = this.state.colors.map((element, index) => {
+      return <h2 key={index}>{element}</h2>;
+    });
     return (
       <div className='App'>
         <div className='App-header'>
@@ -13,6 +23,7 @@ class App extends Component {
         <p className='App-intro'>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>{displayColors}</p>
       </div>
     );
   }
@@ -20,4 +31,4 @@ class App extends Component {
 
 export default App;
 
-// 4:00 - 11/18
+// 10:12 - 11/22 - Yes
