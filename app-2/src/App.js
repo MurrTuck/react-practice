@@ -7,7 +7,7 @@ class App extends Component {
     super();
 
     this.state = {
-      colors: ['blue', 'red', 'purple', 'orange', 'green', 'yellow']
+      colors: ['blue', 'red', 'purple', 'green', 'orange']
     };
   }
   render() {
@@ -31,4 +31,4 @@ class App extends Component {
 
 export default App;
 
-// 10:12 - 11/22 - Yes
+// 2:25 - 11/22 - No
