@@ -7,7 +7,7 @@ class App extends Component {
     super();
 
     this.state = {
-      message: 'Super Duper'
+      message: 'Yeah Buddy'
     };
   }
 
@@ -33,4 +33,4 @@ class App extends Component {
 
 export default App;
 
-// 2:47 - 11/22
+// 3:24 - 11/18
