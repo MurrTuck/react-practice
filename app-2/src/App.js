@@ -7,11 +7,12 @@ class App extends Component {
     super();
 
     this.state = {
-      colors: ['blue', 'red', 'purple', 'green', 'orange']
+      colors: ['red', 'blue', 'green']
     };
   }
+
   render() {
-    let displayColors = this.state.colors.map((element, index) => {
+    let colorsToDisplay = this.state.colors.map((element, index) => {
       return <h2 key={index}>{element}</h2>;
     });
     return (
@@ -23,7 +24,7 @@ class App extends Component {
         <p className='App-intro'>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>{displayColors}</p>
+        <p>{colorsToDisplay}</p>
       </div>
     );
   }
@@ -31,4 +32,4 @@ class App extends Component {
 
 export default App;
 
-// 2:25 - 11/22 - No
+// 5:01 - 12/3 - Yes
