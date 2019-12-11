@@ -11,7 +11,7 @@ class App extends Component {
     };
   }
 
-  handleChange(value) {
+  handleText(value) {
     this.setState({ message: value });
   }
 
@@ -25,7 +25,7 @@ class App extends Component {
         <p className='App-intro'>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <input onChange={e => this.handleChange(e.target.value)} type='text' />
+        <input onChange={e => this.handleText(e.target.value)} type='text' />
         <p>{this.state.message}</p>
       </div>
     );
@@ -34,4 +34,4 @@ class App extends Component {
 
 export default App;
 
-// 2:50 - 12/3 - No
+// 2:32 - 12/10 - No
