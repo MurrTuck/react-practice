@@ -25,7 +25,7 @@ class App extends Component {
         <p className='App-intro'>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <input onChange={e => this.handleChange(e.target.value)} />
+        <input onChange={e => this.handleChange(e.target.value)} type='text' />
         <p>{this.state.message}</p>
       </div>
     );
@@ -34,4 +34,4 @@ class App extends Component {
 
 export default App;
 
-// 10:11 - 2/5 - Yes
+// 2:31 - 2/5 - No
