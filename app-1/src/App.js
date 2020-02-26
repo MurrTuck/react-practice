@@ -25,13 +25,8 @@ class App extends Component {
         <p className='App-intro'>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <input
-          onChange={e => {
-            this.handleChange(e.target.value);
-          }}
-          type='text'
-        />
-        <span>{this.state.message}</span>
+        <input onChange={e => this.handleChange(e.target.value)} type='text' />
+        <div>{this.state.message}</div>
       </div>
     );
   }
@@ -39,4 +34,4 @@ class App extends Component {
 
 export default App;
 
-// 2:31 - 2/11 - No
+// 3:14 - 2/26 - No
