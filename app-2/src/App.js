@@ -7,7 +7,7 @@ class App extends Component {
     super();
 
     this.state = {
-      colors: ['red', 'blue', 'green']
+      colors: ['Red', 'Blue', 'Yellow', 'Green']
     };
   }
 
@@ -15,6 +15,7 @@ class App extends Component {
     let colorsToDisplay = this.state.colors.map((element, index) => {
       return <h2 key={index}>{element}</h2>;
     });
+
     return (
       <div className='App'>
         <div className='App-header'>
@@ -32,4 +33,4 @@ class App extends Component {
 
 export default App;
 
-// 5:01 - 12/3 - Yes
+// 4:30 - 3/3 - Yes
