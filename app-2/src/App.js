@@ -1,9 +1,21 @@
-import React, { Component } from "react";
-// import logo from "./logo.svg";
-import "./App.css";
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      colors: ['Red', 'Blue', 'Yellow', 'Green']
+    };
+  }
+
   render() {
+    let colorsToDisplay = this.state.colors.map((element, index) => {
+      return <h2 key={index}>{element}</h2>;
+    });
+
     return (
       <div className='App'>
         <div className='App-header'>
@@ -12,10 +24,13 @@ class App extends Component {
         </div>
         <p className='App-intro'>
           To get started, edit <code>src/App.js</code> and save to reload.
-       </p>
+        </p>
+        <p>{colorsToDisplay}</p>
       </div>
     );
   }
 }
 
 export default App;
+
+// 4:30 - 3/3 - Yes
