@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "dot-prop": "^5.2.0",
+    "elliptic": "^6.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.0.1"
